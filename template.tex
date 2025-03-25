@@ -151,18 +151,18 @@ FACULTY OF COMPUTER SCIENCE AND ENGINEERING
 \begin{tabular}{rrl}
 \hspace{5 cm} & Advisor: & Assoc.Prof. Dr. Trần Ngọc Thịnh \\ 
 && Assoc.Prof. Dr. Phạm Hoàng Anh \\
-& Students: &1. Trần Hoài Tâm MSHV: 2470743 \\
-&&2. Võ Minh Chánh MSHV: 2470501 \\
-&&3. Nguyễn Thành Nhân MSHV: 2491089 \\
-&&4. Nguyễn Thanh Minh Đức MSHV: 2470734 \\
-&&5. Bùi Tiến Đức MSHV: 2498016 \\
-&&6. Trương Vĩnh Phước MSHV: 2470506 \\
-&&7. Phạm Minh Tú MSHV: 2470511 \\
-&&8. Nguyễn Đông Dũng MSHV: 2470568 \\
-&&9. Cao Nguyễn Minh Hiếu MSHV: 2470575 \\
-&&10. Lê Quang Trung MSHV: 2470746 \\
-&&11. Nguyễn Hữu Trưởng MSHV: 2470573 \\
-&&12. Võ Thị Bích Phượng MSHV: 2470570 \\
+& Students: &1. Trần Hoài Tâm - 2470743 \\
+&&2. Võ Minh Chánh - 2470501 \\
+&&3. Nguyễn Thành Nhân - 2491089 \\
+&&4. Nguyễn Thanh Minh Đức - 2470734 \\
+&&5. Bùi Tiến Đức - 2498016 \\
+&&6. Trương Vĩnh Phước - 2470506 \\
+&&7. Phạm Minh Tú - 2470511 \\
+&&8. Nguyễn Đông Dũng - 2470568 \\
+&&9. Cao Nguyễn Minh Hiếu - 2470575 \\
+&&10. Lê Quang Trung - 2470746 \\
+&&11. Nguyễn Hữu Trưởng - 2470573 \\
+&&12. Võ Thị Bích Phượng - 2470570 \\
 
 
 \end{tabular}
@@ -191,7 +191,7 @@ Trong số đó, CPU sử dụng kiến trúc Von Neumann và việc thực thi 
 Hiện nay, các yêu cầu tính toán trí tuệ nhân tạo được đại diện bởi học sâu chủ yếu sử dụng GPU, FPGA và các chip chung hiện có khác phù hợp với tính toán song song để đạt được sự tăng tốc. Nhờ đặc điểm song song cao, tần số cao và băng thông cao, GPU có thể song song hóa các phép toán và rút ngắn đáng kể thời gian vận hành của mô hình. Nhờ khả năng tính toán mạnh mẽ, nó hiện chủ yếu được sử dụng để xử lý các tác vụ tính toán quy mô lớn. Các thuật toán học sâu tăng tốc bằng GPU đã được ứng dụng rộng rãi và đạt được những kết quả đáng kể.
 \subsection{Sự phát triển của mạng no-ron}
 
-Giai đoạn từ năm 1943 đến 1958 được coi là giai đoạn đề xuất mô hình, và làn sóng perceptron được đề xuất vào năm 1958 kéo dài khoảng 10 năm. Khi ngày càng nhiều học giả tham gia vào hướng nghiên cứu này, một số học giả dần phát hiện ra những hạn chế của mô hình perceptron. Với việc xuất bản cuốn *Perceptron* của M. Minsky vào năm 1969, mạng nơ-ron bị đẩy xuống đáy, dẫn đến "thời kỳ đình trệ" của mạng nơ-ron từ năm 1969 đến 1980.
+Giai đoạn từ năm 1943 đến 1958 được coi là giai đoạn đề xuất mô hình, và làn sóng perceptron được đề xuất vào năm 1958 kéo dài khoảng 10 năm. Khi ngày càng nhiều học giả tham gia vào hướng nghiên cứu này, một số học giả dần phát hiện ra những hạn chế của mô hình perceptron. Với việc xuất bản cuốn \textit{Perceptron} của M. Minsky vào năm 1969, mạng nơ-ron bị đẩy xuống đáy, dẫn đến "thời kỳ đình trệ" của mạng nơ-ron từ năm 1969 đến 1980.
 % \begin{figure}[H]
 %      \centering
 %      \includegraphics[scale =0.45]{assets/table-1.png}
@@ -224,13 +224,13 @@ SIMD là một mô hình tính toán song song thuộc phân loại Flynn (Flynn
 SIMD là một dạng của \textbf{data-level parallelism} (tính song song ở cấp độ dữ liệu), nghĩa là nó khai thác tính song song bằng cách xử lý nhiều phần tử dữ liệu cùng lúc, thay vì thực hiện nhiều lệnh khác nhau (như trong mô hình MIMD - Multiple Instruction, Multiple Data).
 \begin{figure}[H]
      \centering
-     \includegraphics[scale =0.4]{assets/simd.png}
+     \includegraphics[scale=0.3]{assets/simd.png}
      \caption{SISD và SIMD}
      \label{fig:2ss}
  \end{figure}
  
 \subsubsection{Vector Programming Model}
-\paragraph{Tông quan về Vector Programming Model}
+\paragraph{Tổng quan về Vector Programming Model} \leavevmode\\
 
 Mô hình lập trình vector là cách mà các lập trình viên hoặc trình biên dịch tương tác với phần cứng của một máy vector. Nó cung cấp một tập hợp các tài nguyên (như thanh ghi vector) và lệnh (như lệnh vector arithmetic) để thực hiện các phép tính song song trên nhiều phần tử dữ liệu cùng lúc (theo kiểu SIMD - Single Instruction, Multiple Data). Mô hình này được thiết kế để:
 
@@ -249,19 +249,19 @@ Mô hình lập trình vector là cách mà các lập trình viên hoặc trìn
 
  Hình ảnh thể hiện một phần của kiến trúc lập trình vector, một mô hình được thiết kế để xử lý dữ liệu dạng mảng (vector) một cách hiệu quả. Cụ thể, nó bao gồm các thanh ghi scalar (r0 đến r15) dùng để lưu trữ các giá trị đơn lẻ như địa chỉ hay hằng số, và các thanh ghi vector (v0 đến v15) dùng để chứa các tập hợp dữ liệu lớn hơn, tức là các vector. Ngoài ra, còn có VLR, một thanh ghi đặc biệt quyết định số phần tử của vector sẽ được xử lý trong mỗi lệnh, và một ví dụ về lệnh vector là ADDV, thực hiện phép cộng giữa các vector. Tất cả các thành phần này phối hợp để tạo nên một hệ thống xử lý dữ liệu song song mạnh mẽ.
 
-\paragraph{Thanh ghi Scalar (Scalar Registers)}
+\paragraph{Thanh ghi Scalar (Scalar Registers)}\leavevmode\\
 
 Thanh ghi scalar, được ký hiệu từ r0 đến r15 trong hình (tổng cộng 16 thanh ghi), là những thanh ghi thông thường mà ta thường thấy trong các kiến trúc máy tính cơ bản. Mỗi thanh ghi này chỉ lưu trữ được một giá trị đơn, gọi là giá trị scalar, chẳng hạn như một số nguyên hoặc một địa chỉ bộ nhớ. Chúng đóng vai trò như những "trợ thủ" trong việc điều khiển và hỗ trợ các phép tính vector. Ví dụ, r0 có thể chứa địa chỉ bắt đầu của một vector trong bộ nhớ, còn r1 có thể lưu giá trị stride, tức là khoảng cách giữa các phần tử liên tiếp trong vector đó. Nhờ tính đơn giản và linh hoạt, các thanh ghi scalar thường được dùng để quản lý vòng lặp, lưu trữ hằng số hoặc cung cấp thông tin đầu vào cho các lệnh vector, giúp quá trình xử lý dữ liệu trơn tru hơn.
 
-\paragraph{Thanh ghi Vector (Vector Registers)}
+\paragraph{Thanh ghi Vector (Vector Registers)}\leavevmode\\
 
 Khác với thanh ghi scalar, các thanh ghi vector (v0 đến v15, cũng có 16 thanh ghi trong hình) được thiết kế đặc biệt để lưu trữ toàn bộ một vector, tức là một dãy các phần tử dữ liệu. Mỗi thanh ghi vector có thể chứa nhiều giá trị, từ phần tử đầu tiên [0] cho đến phần tử cuối cùng [VLRMAX-1], trong đó VLRMAX là độ dài tối đa mà phần cứng cho phép, ví dụ như 64 phần tử. Điều này có nghĩa là nếu VLRMAX là 64, thì một thanh ghi như v1 có thể chứa một dãy dữ liệu như [a0, a1, ..., a63], và v2 chứa [b0, b1, ..., b63]. Công dụng chính của chúng là lưu trữ dữ liệu để thực hiện các phép tính song song, cho phép máy tính xử lý nhiều phần tử cùng lúc thay vì từng phần tử một như cách truyền thống. Đây chính là điểm mạnh của lập trình vector, giúp tăng tốc độ xử lý đáng kể.
 
-\paragraph{Thanh ghi Độ dài Vector (Vector Length Register - VLR)}
+\paragraph{Thanh ghi Độ dài Vector (Vector Length Register - VLR)}\leavevmode\\
 
 VLR là một thanh ghi đặc biệt, đóng vai trò như "người điều phối" trong mô hình lập trình vector. Nó lưu trữ độ dài hiện tại của vector mà các lệnh vector sẽ xử lý, với giá trị nằm trong khoảng từ 1 đến VLRMAX. Ví dụ, nếu VLR được đặt là 32, thì máy chỉ xử lý 32 phần tử đầu tiên của thanh ghi vector (từ [0] đến [31]), bỏ qua các phần tử còn lại dù thanh ghi có thể chứa tối đa 64 phần tử. Điều này mang lại sự linh hoạt lớn: không phải vector nào cũng cần xử lý hết độ dài tối đa, và VLR giúp máy thích nghi với các kích thước vector khác nhau mà không cần phải thêm dữ liệu giả (padding) để lấp đầy. Trong lập trình, khi một vòng lặp lớn được chia thành các đoạn nhỏ để vector hóa, VLR đặc biệt hữu ích ở đoạn cuối – nơi số phần tử còn lại thường nhỏ hơn VLRMAX. Chẳng hạn, nếu chỉ còn 10 phần tử cần xử lý, VLR được đặt thành 10 để đảm bảo xử lý đúng và đủ.
 
-\paragraph{Lệnh Số học Vector (Vector Arithmetic Instructions)}
+\paragraph{Lệnh Số học Vector (Vector Arithmetic Instructions)}\leavevmode\\
 
 \begin{figure}[H]
     \centering
@@ -314,7 +314,7 @@ Sau khi xử lý một đoạn, con trỏ của A, B, và C được cập nhậ
 \end{itemize}
 
 \subsubsection{Vector Arithmetic Execution}
-Bài này nói về cách máy vector thực thi các phép toán vector (như phép nhân V3 ← V1 * V2) bằng cách sử dụng pipeline sâu. Pipeline sâu giúp tăng tần số xung nhịp và thông lượng, trong khi tính độc lập của các phép toán vector loại bỏ pipeline hazards, dẫn đến điều khiển đơn giản và hiệu suất cao. Đây là một ví dụ điển hình về cách thiết kế phần cứng (pipeline) và phần mềm (lệnh vector) phối hợp để tối ưu hóa hiệu suất, một nguyên tắc quan trọng trong khoa học máy tính và kiến trúc máy tính.
+Phần này mô tả cách máy vector thực thi các phép toán vector (như phép nhân V3 ← V1 * V2) bằng cách sử dụng pipeline sâu. Pipeline sâu giúp tăng tần số xung nhịp và thông lượng, trong khi tính độc lập của các phép toán vector loại bỏ pipeline hazards, dẫn đến điều khiển đơn giản và hiệu suất cao. Đây là một ví dụ điển hình về cách thiết kế phần cứng (pipeline) và phần mềm (lệnh vector) phối hợp để tối ưu hóa hiệu suất, một nguyên tắc quan trọng trong khoa học máy tính và kiến trúc máy tính.
 
 \begin{multicols}{2}
 \begin{figure}[H]
@@ -336,8 +336,8 @@ Bài này nói về cách máy vector thực thi các phép toán vector (như p
     \item Pipeline này có 6 giai đoạn (stages), nghĩa là mỗi phép nhân được chia thành 6 bước nhỏ, mỗi bước được thực hiện trong một chu kỳ xung nhịp.
 \end{itemize}
 \end{multicols}
-\paragraph{Đặc điểm}
-Thực thi phép toán vector có các đặc điểm quan trong như sau:
+\paragraph{Đặc điểm}\leavevmode\\
+Thực thi phép toán vector có các đặc điểm quan trọng như sau:
 \begin{enumerate}
     \item \textbf{Deep pipeline → Fast clock!}\par Trong một pipeline sâu, mỗi giai đoạn chỉ thực hiện một phần nhỏ của phép toán, nên thời gian cho mỗi giai đoạn ngắn hơn. Điều này cho phép tăng tần số xung nhịp (clock frequency), vì tần số xung nhịp tỷ lệ nghịch với thời gian của giai đoạn dài nhất.\par
     Ví dụ: Nếu một phép nhân mất 6 ns mà không có pipeline, thì tần số tối đa là 1/6ns = 166 MHz. Nhưng nếu chia thành 6 giai đoạn, mỗi giai đoạn mất 1 ns, tần số có thể tăng lên 1/1ns = 1 GHz.	Tần số cao hơn giúp máy vector xử lý nhanh hơn, đặc biệt với các tác vụ tính toán lớn.
@@ -351,7 +351,7 @@ Thực thi phép toán vector có các đặc điểm quan trong như sau:
         \item Control hazards: Xung đột điều khiển (ví dụ: do nhánh điều kiện).
         \item Structural hazards: Xung đột tài nguyên (ví dụ: hai lệnh cần cùng một đơn vị chức năng).
     \end{itemize}
-    Trong máy vector, các phép toán trên từng phần tử vector là độc lập (ví dụ: V1[0] * V2[0] không phụ thuộc vào V1[1] * V2[1]). Do đó, không có data hazards giữa các phần tử trong cùng một lệnh vector.	Việc không có pipeline hazards giúp pipeline hoạt động liên tục, tối đa hóa thông lượng.
+    Trong máy vector, các phép toán trên từng phần tử vector là độc lập (ví dụ: V1[0] * V2[0] không phụ thuộc vào V1[1] * V2[1]). Do đó, không có data hazards giữa các phần tử trong cùng một lệnh vector. Tính độc lập này loại bỏ pipeline hazards, cho phép đường ống xử lý hoạt động liên tục và đạt thông lượng tối đa. Điều này làm cho máy vector trở thành một kiến trúc hiệu quả cho các ứng dụng có tính song song dữ liệu cao, và cũng là một ý tưởng quan trọng khi thiết kế các hệ thống tính toán song song trên FPGA trong Reconfigurable Computing.
 
     \item \textbf{Vector maximizes advantages of pipelining and avoids its downsides} \par \textbf{Lợi ích của pipelining}: Tăng thông lượng bằng cách xử lý nhiều phần tử cùng lúc ở các giai đoạn khác nhau.
     
@@ -360,9 +360,9 @@ Thực thi phép toán vector có các đặc điểm quan trong như sau:
 \end{enumerate}
 
 \subsubsection{Vector Instruction Execution}
-\paragraph{Tổng quan về Vector Instruction Execution}
+\paragraph{Tổng quan về Vector Instruction Execution}\leavevmode\\
 
-Hình ảnh này minh họa cách một máy vector thực thi một lệnh vector, cụ thể là lệnh ADDV C, A, B (cộng vector). Lệnh này có nghĩa là: lấy các phần tử của vector A cộng với các phần tử tương ứng của vector B, rồi lưu kết quả vào vector C.
+Cách một máy vector thực thi một lệnh vector, cụ thể là lệnh ADDV C, A, B (cộng vector) như thế nào? Lệnh này có nghĩa là: lấy các phần tử của vector A cộng với các phần tử tương ứng của vector B, rồi lưu kết quả vào vector C.
 
 Điểm đặc biệt ở đây là máy vector có khả năng \textbf{microarchitecturally vary the number of \textit{lanes}} (thay đổi số lượng "lanes" ở cấp độ vi kiến trúc). \textbf{Lanes} ở đây có thể hiểu là các đơn vị chức năng song song (functional units) mà máy sử dụng để thực thi lệnh vector. Hình ảnh so sánh hai cách thực thi:
 \begin{itemize}
@@ -377,7 +377,7 @@ Hình ảnh này minh họa cách một máy vector thực thi một lệnh vect
     \label{fig:enter-label}
 \end{figure}
 
-\paragraph{Thực thi}
+\paragraph{Thực thi}\leavevmode\\
 
 \textbf{Các thành phần trong hình}
 \begin{itemize}
@@ -450,7 +450,7 @@ Ví dụ:
 \end{multicols}
 
 \subsubsection{Vector Unit Structure}
-\paragraph{Tổng quan về Vector Unit Structure}
+\paragraph{Tổng quan về Vector Unit Structure}\leavevmode\\
 
 Đơn vị vector là một phần của bộ xử lý chuyên dụng để thực hiện các phép tính trên nhiều phần tử dữ liệu cùng lúc (theo kiểu SIMD - Single Instruction, Multiple Data).
 
@@ -471,7 +471,7 @@ Hình ảnh cũng nhấn mạnh một nguyên tắc thiết kế quan trọng: \
     \label{fig:enter-label}
 \end{figure}
 
-\paragraph{Giải thích chi tiết các thành phần trong hình}
+\paragraph{Giải thích chi tiết các thành phần trong hình}\leavevmode\\
 \begin{enumerate}
     \item Functional Units (Đơn vị chức năng)
     \begin{itemize}
@@ -645,18 +645,123 @@ Hiệu suất đạt được là 24 phép toán mỗi chu kỳ, bao gồm 8 ph�
 \subsubsection{CNN}
 % \newpage
 \section{Phân loại}
+\subsection{Why reconfigurable computing?}
+1.1. Hiệu suất và năng lượng vượt trội của các bộ tăng tốc
 \begin{figure}[H]
     \centering
     \includegraphics[width=1\linewidth]{assets/phanloai.png}
-    \caption{Enter Caption}
+    \caption{Phân loại phần cứng trên trục Specialized - General-Purpose}
     \label{fig:enter-label}
 \end{figure}
+ASICs và accelerators mang lại hiệu suất và hiệu quả năng lượng cao, nhưng thiếu tính linh hoạt và tốn kém để phát triển. CPUs và VLIW rất linh hoạt, nhưng không thể cạnh tranh về hiệu suất cho các tác vụ chuyên biệt. FPGAs, nằm ở vị trí trung gian, là một ví dụ điển hình của Reconfigurable Computing—chúng có thể được tái cấu hình để đạt hiệu suất cao cho nhiều loại tác vụ, nhưng vẫn không đạt được hiệu quả năng lượng của ASICs. Mục tiêu của Reconfigurable Computing là tìm một điểm cân bằng trên trục này, nơi chúng ta có thể đạt được hiệu suất gần với ASICs nhưng vẫn giữ được tính linh hoạt của CPUs, mà không cần phát triển phần cứng tùy chỉnh.
 \section{Kiến trúc và chức năng}
 \subsection{CPU, GPU, TPU}
 \subsection{FPGA - Field-Programmable Gate Array}
-\subsubsection{Components of an FPGA}
-\subsubsection{Programming Technology}
+\subsubsection{Ứng dụng FPGA qua các năm}
+\begin{itemize}
+    \item \textbf{Classically: ASIC prototyping, Low-volume applications:} \par
+    Ban đầu, FPGA được sử dụng chủ yếu cho hai mục đích: ASIC prototyping (tạo mẫu ASIC) và low-volume applications (ứng dụng sản lượng thấp). Trong ASIC prototyping, FPGA được sử dụng để kiểm tra thiết kế phần cứng trước khi sản xuất ASIC, vì việc sửa lỗi trên FPGA rẻ và nhanh hơn nhiều so với sửa ASIC. Ví dụ, một công ty thiết kế ASIC cho xử lý tín hiệu có thể triển khai thiết kế trên FPGA để kiểm tra chức năng, sau đó sản xuất ASIC khi thiết kế đã ổn định. Trong low-volume applications, FPGA được sử dụng cho các sản phẩm có số lượng sản xuất thấp (như thiết bị y tế hoặc quân sự), nơi chi phí thiết kế ASIC không khả thi. Ví dụ, một thiết bị y tế chuyên dụng có thể sử dụng FPGA để xử lý tín hiệu, vì chỉ cần sản xuất vài trăm đơn vị.
+    \item \textbf{More recently: “General-purpose acceleration” platform, Widely deployed in datacenter @ Microsoft, Amazon} \par
+    Gần đây (tính đến năm 2019), FPGA đã chuyển sang vai trò "general-purpose acceleration" platform (nền tảng tăng tốc đa năng), và được triển khai rộng rãi trong các trung tâm dữ liệu (datacenters) bởi các công ty lớn như Microsoft và Amazon. Trong vai trò này, FPGA được sử dụng để tăng tốc các tác vụ tính toán chuyên biệt, như học sâu, xử lý tìm kiếm, hoặc mã hóa video, trong khi vẫn giữ được tính linh hoạt để tái cấu hình cho các tác vụ khác. Ví dụ, Microsoft sử dụng FPGA trong Azure để tăng tốc các truy vấn tìm kiếm của Bing, đạt hiệu suất cao hơn nhiều so với CPU. Tương tự, Amazon sử dụng FPGA trong AWS (Amazon Web Services) để cung cấp dịch vụ tăng tốc học máy (machine learning acceleration) cho khách hàng, cho phép họ tái cấu hình FPGA để phù hợp với mô hình học máy cụ thể.
+    \item \textbf{Why the shift? Slowdown in CPU performance scaling, Cloud operators want to serve a variety of customers (reconfigurability++):} \par
+    Lý do cho sự thay đổi này qua hai yếu tố chính. Thứ nhất, "Slowdown in CPU performance scaling" (Sự chậm lại trong việc mở rộng hiệu suất CPU): Theo định luật Moore, hiệu suất CPU từng tăng gấp đôi sau mỗi 18-24 tháng, nhưng từ khoảng năm 2010, sự mở rộng này đã chậm lại do các giới hạn vật lý (như kích thước bóng bán dẫn nhỏ hơn dẫn đến rò rỉ điện và tiêu thụ năng lượng cao). Điều này khiến CPU không còn đáp ứng được nhu cầu tính toán ngày càng tăng, đặc biệt trong các ứng dụng như học sâu hoặc xử lý dữ liệu lớn. FPGA, với khả năng song song hóa phần cứng (hardware parallelism), trở thành một giải pháp thay thế hiệu quả để tăng tốc các tác vụ chuyên biệt. Thứ hai, "Cloud operators want to serve a variety of customers (reconfigurability++)" (Các nhà vận hành đám mây muốn phục vụ nhiều khách hàng khác nhau): Trong các trung tâm dữ liệu, các nhà cung cấp như Microsoft và Amazon cần hỗ trợ nhiều loại ứng dụng khác nhau (tìm kiếm, học máy, mã hóa video, v.v.). Tính tái cấu hình (reconfigurability) của FPGA cho phép họ triển khai một nền tảng phần cứng duy nhất, sau đó tái cấu hình nó để đáp ứng nhu cầu của từng khách hàng, thay vì phải sử dụng nhiều loại ASIC khác nhau.
 
+\end{itemize}
+
+\subsubsection{Components of an FPGA}
+FPGA là một thành phần quan trọng trong lĩnh vực Reconfigurable Computing, nó là một mạch tích hợp có thể lập trình được, cho phép người dùng cấu hình lại logic và kết nối của nó sau khi sản xuất. Vì thế, nó cung cấp sự linh hoạt trong việc lập trình phần cứng để thực hiện các tác vụ cụ thể, đồng thời duy trì khả năng tái cấu hình để thích nghi với nhiều ứng dụng khác nhau.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\linewidth]{assets/fpag.png}
+    \caption{FPGA components}
+    \label{fig:enter-label}
+\end{figure}
+Sơ đồ này minh họa các thành phần chính của FPGA, bao gồm:
+\begin{itemize}
+    \item \textbf{Khối logic (Logic Blocks):} Các ô vuông trong lưới đại diện cho các khối logic, còn được gọi là \textbf{Configurable Logic Blocks} (CLBs) hoặc \textbf{Logic Elements} (LEs), tùy thuộc vào nhà sản xuất (như Xilinx hoặc Intel). Mỗi khối logic là một đơn vị cơ bản có thể được lập trình để thực hiện các hàm logic, chẳng hạn như AND, OR, XOR, hoặc các hàm phức tạp hơn. Các khối logic này được sắp xếp thành một mảng 2D, với các hàng và cột được kết nối bởi một mạng định tuyến (routing network).
+    \item  \textbf{Mạng định tuyến có thể lập trình (Programmable Routing):} Các đường ngang và dọc giữa các khối logic đại diện cho \textbf{interconnect} (mạng kết nối), được minh họa chi tiết hơn ở phần bên phải của hình ảnh. Mạng định tuyến này bao gồm các đường dây (wires) và các điểm chuyển mạch (switches) có thể lập trình, cho phép người dùng định tuyến tín hiệu giữa các khối logic, cũng như giữa các khối logic và các chân I/O (input/output). Trong hình, mạng định tuyến được biểu thị bằng các đường zigzag, cho thấy tính linh hoạt trong việc kết nối các khối logic theo nhiều cách khác nhau.
+    \item \textbf{Chân I/O (I/O Pins):} Các chấm tròn ở rìa của sơ đồ đại diện cho các I/O pins (chân đầu vào/đầu ra), được đánh dấu là "I/O pins". Đây là các điểm giao tiếp giữa FPGA và thế giới bên ngoài, cho phép FPGA nhận dữ liệu đầu vào (input) và gửi dữ liệu đầu ra (output). Ví dụ, trong một ứng dụng xử lý tín hiệu, các chân I/O có thể được sử dụng để nhận tín hiệu analog (sau khi được chuyển đổi thành tín hiệu số) và gửi tín hiệu đã xử lý đến một thiết bị khác.
+
+\end{itemize}
+
+Cấu trúc tổng quan này phản ánh bản chất mô-đun của FPGA: một mảng các khối logic có thể lập trình, được kết nối bởi một mạng định tuyến linh hoạt, và giao tiếp với bên ngoài qua các chân I/O. Thiết kế này cho phép FPGA được cấu hình để thực hiện nhiều loại chức năng, từ các mạch logic đơn giản (như bộ cộng nhị phân) đến các hệ thống phức tạp (như bộ tăng tốc học sâu hoặc bộ xử lý tín hiệu số).
+
+\paragraph{Logic block} \leavevmode\\
+Bên trong một khối logic, được mô tả là \textit{"programmable lookup tables (LUT) and flip-flops (FF) aka ‘soft logic’ or ‘fabric’"} (bảng tra cứu có thể lập trình (LUT) và flip-flops (FF), còn gọi là "soft logic" hoặc "fabric"). Đây là các thành phần cốt lõi tạo nên tính linh hoạt của FPGA:
+\begin{itemize}
+    \item Programmable Lookup Tables (LUTs): LUT (Lookup Table) là một thành phần cơ bản trong FPGA, được sử dụng để thực hiện các hàm logic. Về mặt kỹ thuật, một LUT là một bộ nhớ nhỏ (thường là SRAM - Static Random-Access Memory) có thể lưu trữ bảng giá trị (truth table) của một hàm logic. Một LUT với n đầu vào (n-input LUT) có thể thực hiện bất kỳ hàm logic nào với n biến đầu vào, bằng cách lưu trữ \(2^n\) giá trị đầu ra tương ứng.
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.75\linewidth]{assets/lut.png}
+        \caption{Overview of LUT}
+        \label{fig:enter-label}
+    \end{figure}
+    Ví dụ, một LUT 3 đầu vào (3-input LUT) có \(2^3 = 8\) ô nhớ, mỗi ô lưu trữ một giá trị 0 hoặc 1. Nếu chúng ta muốn lập trình LUT để thực hiện hàm logic \(F(A, B, C) = A \land (B \lor C)\), chúng ta sẽ điền bảng giá trị như sau:
+    
+    \begin{table}[h]
+        \centering
+        \begin{tabular}{|c|c|c|c|}
+            \hline
+            A & B & C & F(A, B, C) \\
+            \hline
+            0 & 0 & 0 & 0 \\
+            0 & 0 & 1 & 0 \\
+            0 & 1 & 0 & 0 \\
+            0 & 1 & 1 & 0 \\
+            1 & 0 & 0 & 0 \\
+            1 & 0 & 1 & 1 \\
+            1 & 1 & 0 & 1 \\
+            1 & 1 & 1 & 1 \\
+            \hline
+        \end{tabular}
+        \caption{Bảng chân trị của F(A, B, C)}
+        \label{tab:truth_table}
+    \end{table}
+    
+    Trong trường hợp này, LUT sẽ được lập trình bằng cách lưu trữ các giá trị đầu ra (0, 0, 0, 0, 0, 1, 1, 1) vào 8 ô nhớ. Khi FPGA hoạt động, các đầu vào A A A, B B B, và C C C sẽ được sử dụng để tra cứu (lookup) giá trị đầu ra tương ứng từ bảng. Điều này cho phép LUT thực hiện bất kỳ hàm logic nào với 3 biến đầu vào, từ các hàm đơn giản (như AND, OR) đến các hàm phức tạp hơn.
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.5\linewidth]{assets/tt-lut.png}
+        \caption{Implementation of majority vote by LUT}
+        \label{fig:enter-label}
+    \end{figure}
+    Trong FPGA hiện đại, LUT thường có 4 đến 6 đầu vào (4-input hoặc 6-input LUT), vì số đầu vào lớn hơn cho phép thực hiện các hàm logic phức tạp hơn mà không cần kết hợp nhiều LUT. Tuy nhiên, số đầu vào lớn cũng làm tăng kích thước bộ nhớ của LUT (ví dụ, một 6-input LUT cần \(\2^6 = 64)\) ô nhớ), dẫn đến chi phí về diện tích và năng lượng.
+    \item \textbf{Flip-Flops (FFs)} là các phần tử lưu trữ (storage elements) trong FPGA, được sử dụng để lưu trữ trạng thái hoặc đồng bộ hóa tín hiệu. Một flip-flop là một mạch tuần tự (sequential circuit) có khả năng lưu trữ một bit dữ liệu (0 hoặc 1), và giá trị của nó chỉ thay đổi khi nhận được tín hiệu xung nhịp (clock signal). Trong sơ đồ, flip-flop được biểu thị bằng một khối "FF" bên cạnh LUT, với một đầu ra được kết nối với mạng định tuyến.
+    
+    Flip-flops thường được sử dụng để:
+    \begin{itemize}
+        \item Lưu trữ trạng thái: Trong các mạch tuần tự, như bộ đếm (counter) hoặc máy trạng thái hữu hạn (finite state machine - FSM), flip-flops lưu trữ trạng thái hiện tại của hệ thống. Ví dụ, một bộ đếm 4-bit cần 4 flip-flops để lưu trữ giá trị hiện tại của bộ đếm.
+        \item Đồng bộ hóa tín hiệu: Flip-flops đảm bảo rằng các tín hiệu trong FPGA được đồng bộ với xung nhịp, tránh các vấn đề như \textbf{race condition} (điều kiện cạnh tranh) hoặc \textbf{glitch} (nhiễu tín hiệu). Ví dụ, đầu ra của một LUT có thể được truyền qua một flip-flop để đảm bảo rằng tín hiệu chỉ thay đổi vào các cạnh xung nhịp (clock edge).
+    \end{itemize}
+    
+    Trong một khối logic, LUT và flip-flop thường được kết hợp với nhau để tạo thành một đơn vị cơ bản gọi là \textbf{slice} (trong FPGA của Xilinx) hoặc \textbf{logic element (LE)} (trong FPGA của Intel). Một slice điển hình bao gồm một hoặc nhiều LUT, một hoặc nhiều flip-flop, và một bộ chọn (multiplexer) để quyết định liệu đầu ra của slice sẽ lấy trực tiếp từ LUT (cho các mạch tổ hợp - combinational logic) hay từ flip-flop (cho các mạch tuần tự - sequential logic).
+    
+
+\end{itemize}
+\paragraph{Programmable Routing} \leavevmode\\
+\textbf{Programmable routing} (mạng định tuyến có thể lập trình), được biểu thị bằng các đường zigzag kết nối các khối logic. Mạng định tuyến là một thành phần quan trọng của FPGA, cho phép tín hiệu được truyền giữa các khối logic, cũng như giữa các khối logic và các chân I/O.
+\begin{itemize}
+    \item Cấu trúc của mạng định tuyến: \par
+    Mạng định tuyến bao gồm các \textbf{wires} (đường dây) và các \textbf{switches} (điểm chuyển mạch) có thể lập trình. Các đường dây được tổ chức thành các kênh định tuyến (routing channels) chạy ngang và dọc qua FPGA, tạo thành một lưới kết nối. Các điểm chuyển mạch, thường được triển khai bằng các \textbf{pass transistors} hoặc \textbf{multiplexers}, cho phép người dùng cấu hình cách các đường dây được kết nối với nhau. Ví dụ, một tín hiệu từ đầu ra của một LUT có thể được định tuyến đến đầu vào của một LUT khác, hoặc đến một chân I/O, bằng cách bật/tắt các điểm chuyển mạch phù hợp.
+    \item Tính linh hoạt: \par Tính "có thể lập trình" của mạng định tuyến là yếu tố then chốt làm cho FPGA linh hoạt. Người dùng có thể định tuyến tín hiệu theo bất kỳ cách nào cần thiết để thực hiện chức năng mong muốn. Ví dụ, trong một ứng dụng xử lý tín hiệu, tín hiệu đầu vào có thể được định tuyến qua một chuỗi các khối logic để thực hiện FFT (Fast Fourier Transform), sau đó được định tuyến đến một chân I/O để xuất kết quả.
+    \item Chi phí overhead: \par
+    Mặc dù mạng định tuyến mang lại tính linh hoạt, nó cũng gây ra chi phí overhead về diện tích, độ trễ, và năng lượng. Trong FPGA, mạng định tuyến thường chiếm \(70-80%\) diện tích chip, vì cần rất nhiều đường dây và điểm chuyển mạch để đảm bảo tính linh hoạt. Ngoài ra, việc truyền tín hiệu qua nhiều điểm chuyển mạch có thể gây ra độ trễ (delay), làm giảm tần số hoạt động (clock frequency) của FPGA so với ASICs.
+
+\end{itemize}
+
+\paragraph{I/O Pins} \leavevmode\\
+I/O pins là một thành phần không thể thiếu trong thiết kế FPGA, đóng vai trò là cầu nối giữa FPGA và thế giới bên ngoài. Mỗi I/O pin được hỗ trợ bởi một I/O block, bao gồm bộ đệm đầu vào, bộ đệm đầu ra, điều khiển ba trạng thái, và các tính năng có thể lập trình như drive strength, slew rate, và termination. I/O pins cho phép FPGA nhận dữ liệu đầu vào, gửi dữ liệu đầu ra, và hỗ trợ các giao thức giao tiếp tốc độ cao, với khả năng tương thích với nhiều chuẩn tín hiệu và mức điện áp khác nhau. Mặc dù đối mặt với các thách thức như số lượng giới hạn, nhiễu tín hiệu, và tiêu thụ năng lượng, I/O pins là yếu tố then chốt giúp FPGA trở thành một nền tảng linh hoạt cho nhiều ứng dụng, từ xử lý tín hiệu, viễn thông, đến hệ thống nhúng. Trong bối cảnh Reconfigurable Computing, I/O pins đảm bảo rằng FPGA có thể giao tiếp hiệu quả với các thiết bị bên ngoài, hỗ trợ việc triển khai các mảng không gian và mạng định tuyến có thể cấu hình để đạt được hiệu suất cao và tính linh hoạt.
+
+Số lượng I/O pins trên một FPGA có thể dao động từ vài chục đến hàng nghìn, tùy thuộc vào kích thước và mục đích của chip. Ví dụ, một FPGA nhỏ như Xilinx Spartan-6 có thể có khoảng 100-200 I/O pins, trong khi một FPGA cao cấp như Xilinx Virtex UltraScale+ có thể có hơn 1000 I/O pins. Số lượng I/O pins là một yếu tố quan trọng trong thiết kế hệ thống, vì nó xác định khả năng giao tiếp của FPGA với các thiết bị bên ngoài.
+\subsubsection{Problems \& limitations}
+Các thách thức liên quan đến lập trình FPGA, với các điểm chính như sau:
+\begin{itemize}
+    \item Low-level coding in hardware language (Verilog, VHDL):\par Một trong những vấn đề lớn nhất khi làm việc với FPGA là yêu cầu lập trình bằng các ngôn ngữ phần cứng cấp thấp (Hardware Description Languages - HDLs) như Verilog hoặc VHDL. Không giống như các ngôn ngữ lập trình cấp cao như C hoặc Python, vốn trừu tượng hóa phần cứng và cho phép người dùng tập trung vào logic thuật toán, Verilog và VHDL yêu cầu người dùng mô tả chi tiết các thành phần phần cứng (như cổng logic, flip-flops) và cách chúng được kết nối. Ví dụ, để triển khai một bộ đếm 4-bit trên FPGA, người dùng phải viết mã Verilog để định nghĩa các flip-flops, cổng logic, và kết nối giữa chúng, thay vì chỉ viết một vòng lặp đơn giản như trong C. Điều này làm tăng độ phức tạp và thời gian phát triển, đặc biệt đối với các nhà phát triển phần mềm không quen với thiết kế phần cứng.
+    \item Lots of work on “high-level synthesis” from FPGA vendors: \par Để giải quyết vấn đề lập trình cấp thấp, các nhà cung cấp FPGA (như Xilinx và Intel) đã đầu tư mạnh vào High-Level Synthesis (HLS), một công nghệ cho phép người dùng viết mã bằng các ngôn ngữ cấp cao như C, C++, hoặc SystemC, sau đó tự động chuyển đổi mã này thành HDL. Ví dụ, công cụ Vivado HLS của Xilinx cho phép người dùng viết một hàm C để thực hiện nhân ma trận, và công cụ sẽ tự động tạo ra mã Verilog tương ứng để triển khai trên FPGA. Tuy nhiên, hình ảnh lưu ý rằng HLS vẫn "Traditionally, awful to use" (Theo truyền thống, rất khó sử dụng), vì các công cụ HLS ban đầu thường tạo ra mã không tối ưu, dẫn đến hiệu suất thấp hoặc sử dụng tài nguyên không hiệu quả. Dù vậy, hình ảnh cũng ghi nhận rằng HLS "might be close to an inflection point" (có thể đang tiến gần đến một bước ngoặt), ám chỉ rằng các cải tiến gần đây (tính đến năm 2019) đã làm cho HLS trở nên khả thi hơn, với các công cụ như Vivado HLS và Intel HLS Compiler cung cấp hiệu suất tốt hơn và dễ sử dụng hơn.
+    \item Synthesis (compilation) can take many hours! Common workflow: start compilation, go home, test next morning, repeat:\par
+    Một vấn đề lớn khác trong lập trình FPGA là thời gian biên dịch (synthesis) kéo dài, có thể mất nhiều giờ, đặc biệt đối với các thiết kế phức tạp. Quá trình biên dịch FPGA bao gồm nhiều bước: tổng hợp (synthesis), ánh xạ (mapping), đặt (placement), và định tuyến (routing). Ví dụ, trong bước tổng hợp, mã Verilog được chuyển thành một netlist (danh sách mạng) gồm các cổng logic; trong bước ánh xạ, netlist được ánh xạ lên các LUT (Lookup Tables); và trong bước đặt và định tuyến, các LUT được đặt vào vị trí vật lý trên chip và kết nối với nhau qua mạng định tuyến. Mỗi bước này là một bài toán tính toán phức tạp (thường là NP-hard), đòi hỏi các thuật toán heuristic tốn nhiều thời gian. Hình ảnh mô tả một quy trình làm việc phổ biến: người dùng bắt đầu biên dịch, về nhà, kiểm tra kết quả vào sáng hôm sau, và lặp lại nếu có lỗi. Điều này làm chậm quá trình phát triển và gỡ lỗi (debugging), đặc biệt khi so sánh với phần mềm, nơi biên dịch chỉ mất vài giây hoặc phút.
+
+\end{itemize}
 \subsubsection{So sánh FPGA và ASIC}
 FPGA thường linh hoạt và tiết kiệm chi phí hơn so với ASIC. Trong các phần sau, tôi sẽ giải thích lý do tại sao điều này đúng.
 
@@ -667,8 +772,6 @@ Giảm rủi ro thời gian thiết kế so với tốc độ
 Nếu bạn quyết tâm sử dụng quy trình bán dẫn tiên tiến nhất trên thế giới bất chấp chi phí, bạn luôn có thể thiết kế một ASIC chạy nhanh hơn FPGA nhanh nhất hiện có. Tuy nhiên, hầu như không ai sử dụng quy trình tiên tiến nhất: làm như vậy sẽ rất rủi ro, cực kỳ khó khăn và tốn kém đến mức không tưởng. Trên thực tế, chỉ có một số ít công ty sản xuất ASSP (Application-Specific Standard Product) nhảy vào sử dụng quy trình mới ngay khi nó có sẵn. Còn lại, mọi người sử dụng các quy trình đã cũ hơn một, hai hoặc ba thế hệ. Và thực tế là FPGA nhanh nhất mà bạn có thể sở hữu có thể cạnh tranh trực tiếp với các quy trình ASIC cũ hơn đó. Hơn nữa, FPGA mang lại công việc thiết kế ít hơn và rủi ro thấp hơn rất nhiều.
 
 Ví dụ, nếu bạn đang thiết kế một hệ thống với yêu cầu cụ thể về hiệu suất năng lượng và hiệu năng, và dự định sử dụng một ASIC 65 nanomet (nm) cũ hơn, bạn có biết rằng bạn có thể đạt được kết quả tương tự với một FPGA 20 nm hiện tại không? Việc sử dụng FPGA sẽ rút ngắn thời gian thiết kế của bạn, giảm nguy cơ lỗi thiết kế, và cung cấp tổng chi phí sở hữu (TCO) thấp hơn so với ASIC. Đối với hầu hết các ứng dụng, mức tiêu thụ năng lượng của FPGA sẽ ở mức chấp nhận được cho nhu cầu của bạn. Do đó, nhờ vào TCO thấp hơn và tính linh hoạt cao hơn, FPGA thường là lựa chọn công nghệ tốt nhất.
-
-Nanomet (nm) là đơn vị đo kích thước của các bóng bán dẫn trên chip. Các bóng bán dẫn đã thu nhỏ trong suốt nhiều thập kỷ. Xem Chương 2.
 
 Việc chọn một FPGA cho một hệ thống mang lại cho nhà thiết kế khả năng cấu hình cao hơn cũng như giảm rủi ro ảnh hưởng đến lịch trình phát triển, bởi vì, như được minh họa bởi phép so sánh với LEGO, các phần nhỏ của FPGA có thể được sửa đổi mà không ảnh hưởng đến phần còn lại của thiết kế.
 \subsection{ASIC - Application-Specific Integrated Circuit}
